@@ -25,7 +25,7 @@ const projects = [
       'Health profile management',
       'Secure authentication'
     ],
-    githubUrl: 'https://github.com/LayaSadhana',
+    githubUrl: 'https://github.com/sadhana-0705/HealthGuide',
     liveUrl: null,
     isFeatured: true
   },
@@ -47,8 +47,8 @@ const projects = [
       'Print center discovery',
       'Delivery workflow'
     ],
-    githubUrl: 'https://github.com/LayaSadhana',
-    liveUrl: 'https://printease.example.com',
+    githubUrl: 'https://github.com/sadhana-0705/printease',
+    liveUrl: 'https://printease-2.onrender.com/',
     isFeatured: false
   }
 ];

@@ -16,14 +16,14 @@ const contactLinks = [
     icon: Linkedin,
     label: 'LinkedIn',
     value: '/in/laya-sadhana',
-    href: 'https://linkedin.com/in/laya-sadhana',
+    href: 'http://www.linkedin.com/in/laya-sadhana-perungulam-kanaka-5b26b4296',
     color: 'primary'
   },
   {
     icon: Github,
     label: 'GitHub',
     value: '@LayaSadhana',
-    href: 'https://github.com/LayaSadhana',
+    href: 'https://github.com/sadhana-0705/',
     color: 'primary'
   }
 ];
