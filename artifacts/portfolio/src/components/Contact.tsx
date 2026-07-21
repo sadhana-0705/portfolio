@@ -46,7 +46,7 @@ export default function Contact() {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Open to Software Engineer and Full Stack Developer opportunities. 
+            Open to Software Engineer internship and fresher opportunities. 
             Feel free to reach out for collaborations or just to say hello.
           </p>
         </motion.div>
