@@ -4,7 +4,8 @@ import { Button } from '@/components/ui/button';
 
 const headlines = [
   'Computer Science Undergraduate',
-  'Building AI-Powered Web Applications',
+  'Full Stack Developer',
+  'AI-Powered Web Applications',
 ];
 
 export default function Hero() {
@@ -79,8 +80,8 @@ export default function Hero() {
               transition={{ delay: 0.9 }}
               className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-10 max-w-2xl"
             >
-              I enjoy building scalable web applications and AI-powered software that solve real-world problems. 
-              My interests include full-stack development, backend engineering, REST APIs, and integrating AI into practical applications.
+              I enjoy building scalable full-stack web applications — from responsive frontends to robust backends and REST APIs. 
+              I also explore integrating AI into practical applications to make software smarter and more useful.
             </motion.p>
 
             <motion.div

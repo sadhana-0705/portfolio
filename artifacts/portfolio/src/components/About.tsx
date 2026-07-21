@@ -5,14 +5,9 @@ import { Code2, Database, Layers, Sparkles } from 'lucide-react';
 
 const features = [
   {
-    icon: Code2,
-    title: 'Problem Solving',
-    description: 'Tackling complex challenges with algorithmic thinking and clean, maintainable code'
-  },
-  {
     icon: Layers,
     title: 'Full Stack Development',
-    description: 'Building end-to-end applications from responsive frontends to scalable backends'
+    description: 'Building end-to-end applications from responsive frontends to scalable backends — my primary focus'
   },
   {
     icon: Database,
@@ -22,7 +17,12 @@ const features = [
   {
     icon: Sparkles,
     title: 'AI Applications',
-    description: 'Integrating AI models and building intelligent features with modern ML tools'
+    description: 'Integrating AI models and RAG pipelines to make applications smarter and more useful'
+  },
+  {
+    icon: Code2,
+    title: 'Problem Solving',
+    description: 'Tackling complex challenges with algorithmic thinking and clean, maintainable code'
   }
 ];
 
@@ -48,8 +48,8 @@ export default function About() {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a Computer Science undergraduate passionate about building scalable software and AI-powered applications. 
-            Currently pursuing my degree while actively developing projects that solve real-world problems.
+            I'm a Computer Science undergraduate focused on building full-stack web applications — from clean frontends to reliable backends. 
+            I also enjoy exploring how AI can be integrated into software to solve real-world problems more effectively.
           </p>
         </motion.div>
 
