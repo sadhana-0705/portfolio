@@ -103,7 +103,7 @@ export default function Hero() {
                 asChild
                 data-testid="button-download-resume-hero"
               >
-                <a href="/Laya_Sadhana_Resume_1784653544655.pdf" download>
+                <a href="/Laya_Sadhana_Resume_1784656570728.pdf" download>
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
                 </a>

@@ -95,7 +95,7 @@ export default function Contact() {
             className="glow-primary"
             data-testid="button-download-resume-contact"
           >
-            <a href="/Laya_Sadhana_Resume_1784653544655.pdf" download>
+            <a href="/Laya_Sadhana_Resume_1784656570728.pdf" download>
               <Download className="w-5 h-5 mr-2" />
               Download Resume
             </a>
