@@ -178,11 +178,11 @@ function ProfileImage() {
         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
       />
       {/* Photo */}
-      <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-2xl">
+      <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-2xl w-[340px] h-[420px] mx-auto">
         <img
           src="/profile.png"
           alt="Laya Sadhana Perungulam Kanaka"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         {/* Subtle gradient overlay at bottom */}
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-background/30 to-transparent" />
