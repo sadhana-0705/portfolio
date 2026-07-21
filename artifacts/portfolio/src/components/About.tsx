@@ -11,13 +11,13 @@ const features = [
   },
   {
     icon: Database,
-    title: 'Backend Development',
-    description: 'Designing REST APIs, managing databases, and implementing secure authentication'
+    title: 'API & Backend Engineering',
+    description: 'Developing secure REST APIs, authentication systems, and database-driven applications.'
   },
   {
     icon: Sparkles,
-    title: 'AI Applications',
-    description: 'Integrating AI models and RAG pipelines to make applications smarter and more useful'
+    title: 'AI Integration',
+    description: 'Integrating RAG pipelines and LLMs to build intelligent application features.'
   },
   {
     icon: Code2,

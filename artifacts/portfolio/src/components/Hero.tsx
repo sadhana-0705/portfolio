@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const headlines = [
   'Computer Science Undergraduate',
-  'Full Stack Developer',
-  'AI-Powered Web Applications',
+  'Building Modern Web Applications',
 ];
 
 export default function Hero() {
