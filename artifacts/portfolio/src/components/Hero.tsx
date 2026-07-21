@@ -178,7 +178,7 @@ function ProfileImage() {
         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
       />
       {/* Photo */}
-      <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-2xl w-[340px] h-[420px] mx-auto">
+      <div className="relative rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl w-[340px] h-[340px] mx-auto">
         <img
           src="/profile.png"
           alt="Laya Sadhana Perungulam Kanaka"
