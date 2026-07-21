@@ -127,7 +127,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="hidden lg:flex items-center justify-center"
           >
-            <CodeIllustration />
+            <ProfileImage />
           </motion.div>
         </div>
 
@@ -155,114 +155,38 @@ export default function Hero() {
   );
 }
 
-function CodeIllustration() {
+function ProfileImage() {
   return (
-    <svg
-      viewBox="0 0 400 400"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full max-w-md"
-    >
-      {/* Background circles */}
-      <motion.circle
-        cx="200"
-        cy="200"
-        r="180"
-        stroke="hsl(var(--primary))"
-        strokeWidth="1"
-        strokeOpacity="0.1"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1 }}
-      />
-      <motion.circle
-        cx="200"
-        cy="200"
-        r="140"
-        stroke="hsl(var(--accent))"
-        strokeWidth="1"
-        strokeOpacity="0.1"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      />
-
-      {/* Code window */}
-      <motion.g
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-      >
-        <rect x="80" y="80" width="240" height="180" rx="8" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1" />
-        
-        {/* Window header */}
-        <rect x="80" y="80" width="240" height="30" fill="hsl(var(--muted))" />
-        <circle cx="95" cy="95" r="4" fill="hsl(var(--destructive))" />
-        <circle cx="110" cy="95" r="4" fill="hsl(var(--accent))" />
-        <circle cx="125" cy="95" r="4" fill="hsl(var(--primary))" />
-        
-        {/* Code lines */}
-        <rect x="95" y="125" width="120" height="4" rx="2" fill="hsl(var(--primary))" opacity="0.6" />
-        <rect x="95" y="140" width="180" height="4" rx="2" fill="hsl(var(--accent))" opacity="0.4" />
-        <rect x="110" y="155" width="150" height="4" rx="2" fill="hsl(var(--primary))" opacity="0.3" />
-        <rect x="110" y="170" width="100" height="4" rx="2" fill="hsl(var(--foreground))" opacity="0.2" />
-        <rect x="95" y="185" width="140" height="4" rx="2" fill="hsl(var(--accent))" opacity="0.5" />
-        <rect x="110" y="200" width="160" height="4" rx="2" fill="hsl(var(--primary))" opacity="0.4" />
-        <rect x="110" y="215" width="90" height="4" rx="2" fill="hsl(var(--foreground))" opacity="0.2" />
-        <rect x="95" y="230" width="110" height="4" rx="2" fill="hsl(var(--accent))" opacity="0.3" />
-      </motion.g>
-
-      {/* Floating nodes */}
-      <motion.circle
-        cx="320"
-        cy="120"
-        r="8"
-        fill="hsl(var(--primary))"
+    <div className="relative w-full max-w-md mx-auto">
+      {/* Decorative rings */}
+      <div className="absolute inset-0 rounded-full border border-primary/10 scale-110" />
+      <div className="absolute inset-0 rounded-full border border-accent/10 scale-125" />
+      {/* Floating accent dots */}
+      <motion.div
+        className="absolute -top-4 -right-4 w-4 h-4 rounded-full bg-primary/60"
         animate={{ y: [-5, 5, -5] }}
         transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
       />
-      <motion.circle
-        cx="60"
-        cy="280"
-        r="6"
-        fill="hsl(var(--accent))"
+      <motion.div
+        className="absolute -bottom-4 -left-4 w-3 h-3 rounded-full bg-accent/60"
         animate={{ y: [5, -5, 5] }}
         transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
       />
-      <motion.circle
-        cx="340"
-        cy="300"
-        r="5"
-        fill="hsl(var(--primary))"
+      <motion.div
+        className="absolute top-1/2 -right-6 w-2 h-2 rounded-full bg-primary/40"
         animate={{ y: [-3, 3, -3] }}
         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
       />
-
-      {/* Connection lines */}
-      <motion.line
-        x1="200"
-        y1="200"
-        x2="320"
-        y2="120"
-        stroke="hsl(var(--primary))"
-        strokeWidth="1"
-        strokeOpacity="0.2"
-        initial={{ pathLength: 0 }}
-        animate={{ pathLength: 1 }}
-        transition={{ duration: 1.5, delay: 0.8 }}
-      />
-      <motion.line
-        x1="200"
-        y1="200"
-        x2="60"
-        y2="280"
-        stroke="hsl(var(--accent))"
-        strokeWidth="1"
-        strokeOpacity="0.2"
-        initial={{ pathLength: 0 }}
-        animate={{ pathLength: 1 }}
-        transition={{ duration: 1.5, delay: 1 }}
-      />
-    </svg>
+      {/* Photo */}
+      <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-2xl">
+        <img
+          src="/profile.png"
+          alt="Laya Sadhana Perungulam Kanaka"
+          className="w-full h-full object-cover"
+        />
+        {/* Subtle gradient overlay at bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-background/30 to-transparent" />
+      </div>
+    </div>
   );
 }
