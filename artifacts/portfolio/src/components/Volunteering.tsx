@@ -21,10 +21,10 @@ export default function Volunteering() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Giving <span className="text-gradient">Back</span>
+            Community <span className="text-gradient">Impact</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Contributing to educational development through volunteer work
+            Supporting educational development through volunteer mentoring.
           </p>
         </motion.div>
 
